@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>2 Hours Miracle — 100% AI in Production, 100% Human in Idea | Case Study</title>
+<meta name="description" content="Case study: จากบรีฟจริงสู่ Key Visual 4K และ Presentation 7 หน้า ในราว 2 ชั่วโมง — 100% Human in Idea, 100% AI in Production">
+<meta property="og:title" content="2 Hours Miracle — 100% AI in Production, 100% Human in Idea">
+<meta property="og:description" content="Real production case study โดย ชวัฏ ตั้งบุญธินา (ก้อ)">
+<meta property="og:image" content="assets/img/poster-final.webp">
+<meta name="theme-color" content="#b1f8f5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27%23fe5e15%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2730%27 font-family=%27Arial%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3E2H%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/FCIconic-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/SpaceGrotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Space Grotesk';src:url(assets/fonts/SpaceGrotesk-var.woff2) format("woff2");font-weight:300 700;font-display:swap}
+@font-face{font-family:'DM Sans';src:url(assets/fonts/DMSans-var.woff2) format("woff2");font-weight:400 700;font-display:swap}
+@font-face{font-family:'FC Iconic';size-adjust:136%;ascent-override:56.6%;descent-override:16.2%;line-gap-override:0%;src:url(assets/fonts/FCIconic-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:'FC Iconic';size-adjust:136%;ascent-override:56.6%;descent-override:16.2%;line-gap-override:0%;src:url(assets/fonts/FCIconic-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
+:root{
+  --bg:#f7f6f4;--s1:#fff;--s2:#f6f4f1;--s3:#e9e5e0;
+  --bd:hsla(0,0%,7%,.08);--bd2:hsla(0,0%,7%,.14);
+  --t1:#111;--t2:#45444a;--t3:#85838c;
+  --v:#fe5e15;--v3:#c24a0a;--bl:#1e51e5;--bl2:#1a46c7;--yl:#f5a623;--cy:#b1f8f5;--cy2:#7fe6e1;
+  --mint:#eafaf9;--peach:#ffeee4;--cream:#fff7ec;--ink:#121212;
+  --r-sm:12px;--r:16px;--r-lg:22px;
+  --gtx:linear-gradient(120deg,#fe5e15,#f5a623);
+  --sh:0 2px 8px hsla(0,0%,7%,.06),0 10px 30px hsla(0,0%,7%,.07);
+  --sh2:0 1px 2px hsla(0,0%,7%,.05),0 4px 14px hsla(0,0%,7%,.08);
+  --shv:0 6px 18px rgba(30,81,229,.3);--sho:0 6px 18px rgba(254,94,21,.3);
+  --display:'Space Grotesk','FC Iconic','Noto Sans Thai','Sarabun','Leelawadee UI','Thonburi',sans-serif;
+  --head:'FC Iconic','Space Grotesk','Noto Sans Thai','Sarabun','Leelawadee UI','Thonburi',sans-serif;
+  --body:'DM Sans','FC Iconic','Noto Sans Thai','Sarabun','Leelawadee UI','Thonburi',-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;background:#e9e5e0;overflow:hidden;font-family:var(--body);color:var(--t1);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+b,strong{font-weight:700}
+#progress{position:fixed;left:0;top:0;height:4px;width:0;background:var(--gtx);z-index:50;transition:width .4s ease}
+#viewport{position:fixed;left:0;right:0;top:0;bottom:64px;display:flex;align-items:center;justify-content:center}
+#stage{width:1280px;height:720px;position:relative;flex:none;transform-origin:center center;border-radius:14px;overflow:hidden;box-shadow:0 18px 60px rgba(17,17,17,.16),0 2px 6px rgba(17,17,17,.06);background:var(--bg)}
+.slide{position:absolute;inset:0;background:var(--bg);overflow:hidden;display:flex;flex-direction:column;padding:38px 60px 56px;opacity:0;visibility:hidden;transition:opacity .38s ease,visibility .38s}
+.slide.active{opacity:1;visibility:visible}
+.slide .foot{position:absolute;left:60px;right:60px;bottom:18px;height:22px;display:flex;align-items:center;justify-content:space-between;font-family:var(--display);font-size:12.5px;color:var(--t3);letter-spacing:.3px}
+.foot .fl{display:flex;align-items:center;gap:8px}
+.foot .dot{width:7px;height:7px;border-radius:50%;background:var(--v)}
+.hdr{flex:none;margin-bottom:16px}
+.kick{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--t2)}
+.kick b{background:var(--bl);color:#fff;border-radius:999px;padding:4px 13px;box-shadow:var(--shv);letter-spacing:1px}
+.kick b.or{background:var(--v);box-shadow:var(--sho)}
+.kick b.dk{background:var(--ink);box-shadow:none}
+h2{font-family:var(--head);font-weight:700;font-size:33px;line-height:1.22;margin-top:10px;letter-spacing:-.2px;color:var(--t1)}
+h2 .n{font-family:var(--display);color:var(--v);letter-spacing:-1px;margin-right:4px}
+h2 .soft{display:block;color:var(--t2);font-weight:400;font-size:21px;line-height:1.35;margin-top:4px;letter-spacing:0}
+.body{flex:1;min-height:0;position:relative}
+.lbl{font-family:var(--display);font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--t3);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.lbl i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--v)}
+.lbl i.b{background:var(--bl)} .lbl i.y{background:var(--yl)}
+.card{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r-lg);box-shadow:var(--sh)}
+.pop{position:absolute;pointer-events:none;background:no-repeat center/contain;z-index:1}
+.pop.orange{background-image:url(assets/img/pop-orange.webp)}
+.pop.blue{background-image:url(assets/img/pop-blue.webp)}
+.pop.yellow{background-image:url(assets/img/pop-yellow.webp)}
+.pop.fah{background-image:url(assets/img/pop-fah.webp)}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 12px;font-size:13px;font-weight:500;background:var(--s2);border:1px solid var(--bd2);color:var(--t2);white-space:nowrap}
+.z{cursor:zoom-in;display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.zw{position:relative;overflow:hidden;border-radius:var(--r);background:var(--s3);box-shadow:var(--sh2)}
+.zw:hover .z{transform:scale(1.035)}
+.zw::after{content:"";position:absolute;right:8px;top:8px;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.92) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2.4' stroke-linecap='round'%3E%3Ccircle cx='10.5' cy='10.5' r='6'/%3E%3Cpath d='M15 15l5 5M10.5 8v5M8 10.5h5'/%3E%3C/svg%3E") no-repeat center/15px;opacity:0;transition:opacity .2s;pointer-events:none;box-shadow:var(--sh2)}
+.zw:hover::after{opacity:1}
+.cap{font-size:12.5px;color:var(--t2);line-height:1.45;margin-top:7px}
+.cap b{font-family:var(--head);color:var(--t1)}
+.arrow{flex:none;width:26px;display:flex;align-items:center;justify-content:center;color:var(--v)}
+.arrow svg{width:22px;height:22px}
+.tag{font-family:var(--display);font-size:10.5px;font-weight:700;letter-spacing:1px;background:rgba(17,17,17,.78);color:#fff;border-radius:999px;padding:4px 10px;pointer-events:none}
+code{font-family:var(--display);font-size:.92em;background:var(--s2);border:1px solid var(--bd);border-radius:5px;padding:0 5px;color:var(--t1)}
+/* S1 cover */
+.s-cover{padding:0;background:radial-gradient(900px 440px at 30% 122%,#ffeee4 0%,#ffeee4 38%,rgba(255,238,228,0) 72%),var(--cy)}
+.s-cover .cl{position:absolute;left:64px;top:56px;width:560px;z-index:2}
+.eyebrow{display:inline-block;font-family:var(--display);font-weight:700;font-size:11.5px;letter-spacing:1.5px;color:var(--t1);background:rgba(255,255,255,.8);border:1px solid var(--bd2);border-radius:999px;padding:7px 14px}
+.s-cover h1{font-family:var(--display);font-weight:700;font-size:112px;line-height:.9;letter-spacing:-4px;margin:26px 0 22px;color:var(--t1)}
+.s-cover h1 .g{display:block;background:var(--gtx);-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:8px}
+.twin{display:flex;gap:12px;flex-wrap:wrap}
+.badge{display:flex;flex-direction:column;border-radius:18px;padding:12px 20px;color:#fff;line-height:1.05}
+.badge b{font-family:var(--display);font-size:34px;letter-spacing:-1px}
+.badge span{font-family:var(--display);font-size:15px;font-weight:600;opacity:.95;margin-top:3px}
+.badge.ai{background:var(--v);box-shadow:var(--sho)}
+.badge.hu{background:var(--bl);box-shadow:var(--shv)}
+.lead{font-size:17px;line-height:1.6;color:var(--t2);margin-top:22px;max-width:540px}
+.lead b{color:var(--t1)}
+.author{position:absolute;left:64px;bottom:44px;z-index:2;font-size:14.5px;color:var(--t2);background:rgba(255,255,255,.78);border:1px solid var(--bd);border-radius:999px;padding:8px 18px}
+.author b{font-family:var(--head);color:var(--t1)}
+.hero{position:absolute;right:52px;top:108px;width:590px;z-index:2}
+.hero .zw{border-radius:20px;border:7px solid #fff;box-shadow:0 22px 50px rgba(17,17,17,.2);transform:rotate(1.6deg);aspect-ratio:16/9;background:#fff}
+.hero .hc{margin:18px 0 0 12px;display:flex;gap:8px;flex-wrap:wrap}
+.hero .hc .pill{background:rgba(255,255,255,.85)}
+.s-cover .pop.orange{width:150px;height:150px;right:20px;bottom:18px}
+.s-cover .pop.blue{width:78px;height:78px;right:600px;top:70px;transform:rotate(-8deg)}
+.s-cover .pop.yellow{width:84px;height:84px;right:34px;top:36px;transform:rotate(10deg)}
+/* S2 pain */
+.pain{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;height:350px}
+.pc{position:relative;padding:18px 18px 16px;display:flex;flex-direction:column}
+.pc .no{font-family:var(--display);font-weight:700;font-size:46px;line-height:1;color:var(--v);letter-spacing:-1px}
+.pc:nth-child(2) .no{color:var(--bl)} .pc:nth-child(3) .no{color:var(--yl)} .pc:nth-child(4) .no{color:#2fb9b1} .pc:nth-child(5) .no{color:var(--v3)}
+.pc h3{font-family:var(--head);font-weight:700;font-size:21px;line-height:1.25;margin:14px 0 10px}
+.pc p{font-size:15.5px;line-height:1.62;color:var(--t2)}
+.pc .bt{margin-top:auto;display:flex;align-items:center;gap:7px;font-family:var(--display);font-size:10.5px;font-weight:700;letter-spacing:1.2px;color:#dc2626;text-transform:uppercase;padding-top:10px;border-top:1px dashed var(--bd2)}
+.pc .bt svg{width:14px;height:14px;flex:none}
+.impact{margin-top:20px;background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:20px 26px;display:grid;grid-template-columns:1fr auto 1.15fr;gap:22px;align-items:center}
+.impact .k{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:1.6px;color:#9a98a0;margin-bottom:6px}
+.impact p{font-size:18px;line-height:1.55;color:#e8e6ea}
+.impact .hl{color:var(--yl)} .impact .ho{color:#ff8a4f}
+.impact .ar{width:46px;height:46px;border-radius:50%;background:var(--v);display:flex;align-items:center;justify-content:center;box-shadow:var(--sho)}
+.impact .ar svg{width:22px;height:22px}
+/* S3 shift */
+.shift{display:grid;grid-template-columns:1fr 64px 1fr;height:392px}
+.col{border-radius:var(--r-lg);padding:24px 26px;position:relative;overflow:hidden}
+.col.hu{background:var(--bl);color:#fff;box-shadow:var(--shv)}
+.col.ai{background:var(--ink);color:#fff}
+.col .big{font-family:var(--display);font-weight:700;font-size:38px;letter-spacing:-1px;line-height:1}
+.col.ai .big{color:#ff7a3a}
+.col .sm{font-family:var(--head);font-size:16px;margin-top:6px;opacity:.85}
+.col ul{list-style:none;margin-top:24px;display:flex;flex-direction:column;gap:14px;position:relative;z-index:2}
+.col li{display:flex;gap:10px;font-size:16.5px;line-height:1.5;align-items:flex-start}
+.col li::before{content:"";flex:none;width:18px;height:18px;margin-top:2px;border-radius:50%;background:rgba(255,255,255,.18) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") no-repeat center/11px}
+.col.ai li::before{background-color:var(--v)}
+.col.ai ul{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+.col .pop{width:88px;height:88px;right:16px;top:14px}
+.xmark{display:flex;align-items:center;justify-content:center}
+.xmark span{width:48px;height:48px;border-radius:50%;background:#fff;border:1px solid var(--bd2);box-shadow:var(--sh);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:24px;color:var(--t1)}
+.callout{margin-top:18px;background:var(--cream);border:1px solid rgba(245,166,35,.4);border-left:5px solid var(--v);border-radius:var(--r);padding:13px 20px;font-family:var(--head);font-size:17px;font-weight:700;display:flex;align-items:center;gap:12px}
+.callout .pill{background:#fff;font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:1.2px;color:var(--v3);border-color:rgba(254,94,21,.3)}
+/* S4 research */
+.s4g{display:grid;grid-template-columns:420px 300px 1fr;gap:22px;height:100%}
+.refs{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:1fr 1fr;gap:8px;height:calc(100% - 24px)}
+.refs .zw{border-radius:12px}
+.exp{display:flex;flex-direction:column;gap:10px;height:calc(100% - 24px)}
+.exp .zw{flex:1}
+.exp .zw .tag,.illus .zw .tag{position:absolute;left:8px;bottom:8px;z-index:2}
+.story p{font-size:15.5px;line-height:1.65;color:var(--t2)}
+.story p b{color:var(--t1)}
+.styles{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 16px}
+.decide{border-radius:var(--r);background:var(--peach);border:1px solid rgba(254,94,21,.3);padding:16px 18px}
+.decide .k{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:1.4px;color:var(--v3)}
+.decide .q{font-family:var(--head);font-weight:700;font-size:21px;line-height:1.35;margin-top:6px}
+.decide .s{font-size:13.5px;color:var(--t2);margin-top:8px;line-height:1.5}
+.who{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.who .pill.ai{background:var(--ink);color:#fff;border-color:var(--ink)}
+.who .pill.hu{background:var(--bl);color:#fff;border-color:var(--bl)}
+/* S5 elements */
+.s5g{display:grid;grid-template-columns:1fr 318px;gap:22px;height:100%}
+.row{display:flex;align-items:flex-start;gap:8px}
+.row + .lbl{margin-top:16px}
+.th{flex:none}
+.th .zw{border-radius:14px}
+.th.sq .zw{width:134px;height:134px}
+.th.b1 .zw{width:212px;height:170px}
+.th.b2 .zw{width:302px;height:170px}
+.th .cap{font-size:12px;text-align:center}
+.row .arrow{height:134px}
+.row.b .arrow{height:170px}
+.th.real .zw{outline:3px solid var(--yl);outline-offset:-3px}
+.dir{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:22px;position:relative;overflow:hidden;height:100%}
+.dir .k{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:1.6px;color:#ff7a3a}
+.dir h4{font-family:var(--head);font-size:21px;font-weight:700;margin:4px 0 14px}
+.dir ol{list-style:none;counter-reset:d;display:flex;flex-direction:column;gap:12px}
+.dir li{counter-increment:d;display:flex;gap:12px;font-size:14.5px;line-height:1.55;color:#e9e7ec}
+.dir li::before{content:counter(d);flex:none;width:26px;height:26px;border-radius:50%;background:var(--v);color:#fff;font-family:var(--display);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.dir li b{color:#fff}
+.dir .rule{margin-top:16px;border-top:1px dashed rgba(255,255,255,.2);padding-top:14px;font-size:13px;color:#b9b7bf;line-height:1.5}
+.dir .rule b{color:var(--yl)}
+/* S6 concept */
+.s6g{display:grid;grid-template-columns:450px 1fr;gap:26px;height:100%}
+.nm{background:var(--cream);border:1px solid rgba(245,166,35,.4);border-radius:var(--r-lg);padding:18px 20px}
+.nm .t{font-family:var(--head);font-weight:700;font-size:31px;line-height:1.2;color:#5b3416}
+.nm .t em{font-style:normal;color:var(--v)}
+.nm p{font-size:14px;line-height:1.6;color:var(--t2);margin-top:6px}
+.axes{display:flex;flex-direction:column;gap:9px;margin-top:12px}
+.ax{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:11px 14px;box-shadow:var(--sh2)}
+.ax .tg{flex:none;width:142px;white-space:nowrap;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.3px;color:#fff;border-radius:10px;padding:8px 10px;text-align:center}
+.ax .tg small{font-family:var(--head);font-size:14px;font-weight:700}
+.ax:nth-child(1) .tg{background:#7a4a24} .ax:nth-child(2) .tg{background:#5f8a3a} .ax:nth-child(3) .tg{background:#c25579}
+.ax p{font-size:14px;line-height:1.5;color:var(--t2)}
+.illus{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;height:118px;max-width:604px}
+.illus .zw img{object-position:50% 35%}
+.deckimg{margin-top:10px;aspect-ratio:16/9;width:100%;max-width:604px}
+/* S7 logo */
+.steps3{display:grid;grid-template-columns:1fr 30px 1fr 30px 1fr;align-items:start}
+.st .zw{height:232px}
+.st .zw.chk{background:#2a2a2e repeating-conic-gradient(#3a3a40 0 25%,#2a2a2e 0 50%) 0 0/22px 22px}
+.st .zw.chk .z{object-fit:contain;padding:16px}
+.st .sn{display:flex;align-items:center;gap:10px;margin-top:12px}
+.st .sn b{flex:none;width:30px;height:30px;border-radius:50%;background:var(--v);color:#fff;font-family:var(--display);font-size:14px;display:flex;align-items:center;justify-content:center}
+.st .sn span{font-family:var(--head);font-weight:700;font-size:17px}
+.st p{font-size:14.5px;line-height:1.58;color:var(--t2);margin-top:6px}
+.steps3 .arrow{height:232px}
+.tip{margin-top:24px;position:relative;background:linear-gradient(100deg,#fff4d9,#fff7ec);border:1px solid rgba(245,166,35,.5);border-radius:var(--r-lg);padding:16px 22px 16px 112px;min-height:92px;display:flex;flex-direction:column;justify-content:center}
+.tip .pop{width:78px;height:78px;left:18px;top:50%;transform:translateY(-50%) rotate(-6deg)}
+.tip .k{font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:1.6px;color:#b45309}
+.tip p{font-size:16px;line-height:1.55;margin-top:3px}
+.tip p b{font-family:var(--head)}
+.tip .hl{background:linear-gradient(transparent 60%,rgba(254,94,21,.22) 0);padding:0 2px}
+/* S8 deck */
+.s8g{display:grid;grid-template-columns:858px 1fr;gap:24px;height:100%;align-items:center}
+.gal1{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal2{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gc .zw{aspect-ratio:16/9;border-radius:12px}
+.gc .cap{margin-top:5px;font-size:12px}
+.gc .cap b{font-family:var(--display);color:var(--v);margin-right:5px}
+.lockbar{display:flex;align-items:center;gap:12px;margin:14px 0 8px}
+.lock{display:inline-flex;align-items:center;gap:7px;background:var(--ink);color:#fff;border-radius:999px;padding:5px 13px 5px 10px;font-size:12.5px;font-weight:500;white-space:nowrap}
+.lock svg{width:13px;height:13px}
+.lockbar .cap{margin:0}
+.gal2 .zw .tag{position:absolute;left:6px;bottom:6px;z-index:2;background:rgba(17,17,17,.82)}
+.hil{display:flex;flex-direction:column;gap:9px}
+.hi{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--bd);border-radius:var(--r);padding:11px 14px;box-shadow:var(--sh2)}
+.hi i{flex:none;width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-style:normal;font-family:var(--display);font-weight:700;font-size:13px;color:#fff;background:var(--bl)}
+.hi:nth-child(2) i{background:#c8a27a} .hi:nth-child(3) i{background:var(--yl)} .hi:nth-child(4) i{background:var(--v)}
+.hi p{font-size:13.5px;line-height:1.5;color:var(--t2)} .hi p b{color:var(--t1);font-family:var(--head)}
+.pptx{margin-top:12px;display:flex;align-items:center;gap:12px;background:var(--ink);color:#fff;border-radius:var(--r);padding:13px 16px}
+.pptx .ic{flex:none;width:40px;height:46px;border-radius:7px;background:#d24726;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:12px}
+.pptx p{font-size:13px;line-height:1.45;color:#d9d7dd} .pptx p b{color:#fff;font-family:var(--head);font-size:15px}
+/* S9 stack */
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;height:372px}
+.tool{position:relative;padding:20px 20px 16px;display:flex;flex-direction:column;overflow:hidden}
+.tool::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--bl)}
+.tool.t2::before{background:var(--v)} .tool.t3::before{background:var(--yl)}
+.tool .top{display:flex;align-items:center;gap:12px}
+.tool .ix{flex:none;width:44px;height:44px;border-radius:13px;background:var(--bl);color:#fff;font-family:var(--display);font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shv)}
+.tool.t2 .ix{background:var(--v);box-shadow:var(--sho)} .tool.t3 .ix{background:var(--yl);box-shadow:0 6px 18px rgba(245,166,35,.35)}
+.tool h3{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:-.4px;line-height:1.15}
+.tool h3 small{display:block;font-size:12.5px;font-weight:500;color:var(--t3);letter-spacing:0;margin-top:2px}
+.tool .role{font-family:var(--head);font-weight:700;font-size:16.5px;margin:14px 0 12px;padding:7px 11px;border-radius:10px;background:var(--mint);color:#0f5f5a}
+.tool.t2 .role{background:var(--peach);color:var(--v3)} .tool.t3 .role{background:var(--cream);color:#8a5a06}
+.tool ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.tool li{font-size:15.6px;line-height:1.5;color:var(--t2);padding-left:16px;position:relative}
+.tool li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--bl)}
+.tool.t2 li::before{background:var(--v)} .tool.t3 li::before{background:var(--yl)}
+.flow{margin-top:18px;display:flex;align-items:stretch;background:#fff;border:1px solid var(--bd);border-radius:var(--r-lg);padding:10px;box-shadow:var(--sh2)}
+.fn{flex:1;border-radius:13px;padding:10px 12px;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.fn b{font-family:var(--display);font-size:15px;letter-spacing:-.2px;line-height:1.2}
+.fn span{font-size:12.5px;color:var(--t3);margin-top:2px}
+.fn.h{background:var(--bl);color:#fff} .fn.h span{color:#cfd9ff}
+.fn.g{background:var(--mint)} .fn.p{background:var(--peach)} .fn.y{background:var(--cream)}
+.fn.f{background:var(--ink);color:#fff} .fn.f span{color:#aaa}
+.fa{flex:none;width:26px;display:flex;align-items:center;justify-content:center;color:var(--t3)}
+.fa svg{width:16px;height:16px}
+/* S10 summary */
+.ba{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.bc{padding:22px 22px 20px;position:relative;min-height:198px}
+.bc .k{font-family:var(--head);font-weight:700;font-size:17px;color:var(--t3)}
+.bc .bf{font-size:14.5px;color:var(--t3);margin-top:10px;line-height:1.4;text-decoration:line-through;text-decoration-color:rgba(220,38,38,.55);text-decoration-thickness:1.5px}
+.bc .bf.nl{text-decoration:none;font-family:var(--display);letter-spacing:1px;font-size:11px;font-weight:700}
+.bc .af{font-family:var(--head);font-weight:700;font-size:23px;line-height:1.3;margin-top:10px;color:var(--t1)}
+.bc .af.sm{font-size:17px}
+.bc .af em{font-style:normal;color:var(--v)}
+.bc .nt{font-size:13.5px;color:var(--t2);margin-top:5px;line-height:1.4}
+.bc.hot{background:var(--ink);border-color:var(--ink)}
+.bc.hot .k{color:#9a98a0} .bc.hot .bf{color:#8d8b93} .bc.hot .af{color:#fff;font-size:40px;font-family:var(--display);letter-spacing:-1px} .bc.hot .af em{color:#ff7a3a} .bc.hot .nt{color:#c9c7cf}
+.lessons-h{display:flex;align-items:center;gap:12px;margin:26px 0 14px}
+.lessons-h h3{font-family:var(--head);font-weight:700;font-size:24px}
+.lessons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ls{padding:24px 22px;display:flex;gap:16px;align-items:flex-start;min-height:136px}
+.ls .n{flex:none;font-family:var(--display);font-weight:700;font-size:58px;line-height:.9;color:var(--v);letter-spacing:-2px}
+.ls:nth-child(2) .n{color:var(--bl)} .ls:nth-child(3) .n{color:#2fb9b1}
+.ls h4{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:-.3px}
+.ls p{font-size:15.5px;line-height:1.6;color:var(--t2);margin-top:7px}
+/* S11 closing */
+.s-close{background:radial-gradient(900px 420px at 50% 125%,#ffeee4 0%,#ffeee4 40%,rgba(255,238,228,0) 72%),var(--cy);align-items:center;justify-content:center;text-align:center;padding-top:30px;padding-bottom:70px}
+.s-close .big{font-family:var(--display);font-weight:700;font-size:60px;line-height:1.08;letter-spacing:-2px;margin-top:18px}
+.s-close .big>span{display:block}
+.s-close .big .o{color:var(--v)} .s-close .big .b{color:var(--bl)} .s-close .big .d{display:none!important}
+.s-close .q{font-family:var(--head);font-size:21px;line-height:1.5;color:var(--t2);margin-top:16px;max-width:1040px}
+.s-close .q b{color:var(--t1);font-family:var(--display);font-weight:700}
+.spk{margin-top:26px;width:880px;display:flex;gap:24px;align-items:center;text-align:left;padding:24px 28px;background:rgba(255,255,255,.92);position:relative;z-index:2}
+.av{flex:none;width:96px;height:96px;border-radius:28px;background:var(--gtx);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--head);font-weight:700;font-size:34px;box-shadow:var(--sho)}
+.spk h3{font-family:var(--head);font-weight:700;font-size:25px}
+.spk .rl{font-family:var(--display);font-weight:600;font-size:15px;color:var(--bl);margin-top:2px}
+.spk p{font-size:14.5px;line-height:1.55;color:var(--t2);margin-top:8px}
+.links{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.links a{text-decoration:none;display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:6px 14px 6px 10px;font-size:13px;font-weight:500;background:#fff;border:1px solid var(--bd2);color:var(--t1);transition:background .2s,color .2s}
+.links a:hover{background:var(--ink);color:#fff}
+.links a svg{width:15px;height:15px}
+.s-close .pop.orange{width:130px;height:130px;left:60px;bottom:40px;transform:rotate(-10deg)}
+.s-close .pop.blue{width:100px;height:100px;right:70px;top:60px;transform:rotate(8deg)}
+.s-close .pop.yellow{width:90px;height:90px;right:84px;bottom:56px}
+.s-close .pop.fah{width:76px;height:76px;left:96px;top:70px}
+/* nav */
+#nav{position:fixed;left:0;right:0;bottom:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;z-index:40;background:rgba(247,246,244,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--bd)}
+#nav>div{flex:1}
+#nav>.ctl{flex:none}
+#nav .ttl{font-family:var(--display);font-size:13px;color:var(--t2);display:flex;align-items:center;gap:8px;min-width:0;white-space:nowrap;overflow:hidden}
+#nav .ttl b{color:var(--t1)}
+#nav .ttl .dot{width:9px;height:9px;border-radius:50%;background:var(--gtx);flex:none}
+.ctl{display:flex;align-items:center;gap:10px}
+.nb{width:42px;height:42px;border-radius:50%;border:1px solid var(--bd2);background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh2);transition:background .2s,color .2s,transform .1s}
+.nb:hover{background:var(--ink);color:#fff}
+.nb:active{transform:scale(.95)}
+.nb:disabled{opacity:.35;pointer-events:none}
+.nb svg{width:18px;height:18px}
+#ctr{font-family:var(--display);font-weight:700;font-size:15px;min-width:74px;text-align:center;letter-spacing:.5px}
+#ctr span{color:var(--t3);font-weight:500}
+.rt{display:flex;gap:10px;align-items:center;justify-content:flex-end}
+.tb{height:40px;border-radius:999px;border:1px solid var(--bd2);background:#fff;padding:0 15px;display:flex;align-items:center;gap:8px;font-family:var(--display);font-size:13px;font-weight:600;box-shadow:var(--sh2)}
+.tb:hover{background:var(--ink);color:#fff}
+.tb svg{width:16px;height:16px}
+.keys{font-family:var(--display);font-size:11.5px;color:var(--t3)}
+.keys kbd{font-family:inherit;border:1px solid var(--bd2);border-bottom-width:2px;border-radius:5px;padding:0 5px;background:#fff;color:var(--t2)}
+/* modals */
+.modal{position:fixed;inset:0;z-index:100;display:none;background:rgba(14,14,16,.9);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.modal.open{display:flex}
+.mx{position:absolute;right:18px;top:16px;width:44px;height:44px;border-radius:50%;border:none;background:#fff;color:#111;display:flex;align-items:center;justify-content:center;z-index:3;box-shadow:var(--sh)}
+.mx svg{width:20px;height:20px}
+#lb{align-items:center;justify-content:center;flex-direction:column;padding:60px 24px 24px;cursor:zoom-out}
+#lb img{max-width:min(96vw,1800px);max-height:calc(100vh - 130px);border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.5);background:#222;cursor:default}
+#lbcap{color:#eee;font-size:15px;margin-top:14px;text-align:center;max-width:900px;line-height:1.5}
+#ov{overflow:auto;padding:64px 40px 40px;flex-direction:column;align-items:center}
+#ov h3{color:#fff;font-family:var(--display);font-size:20px;margin-bottom:20px;letter-spacing:.3px}
+#ovg{display:grid;grid-template-columns:repeat(4,256px);gap:18px}
+.ovi{background:none;border:none;text-align:left;color:#ddd}
+.ovt{width:256px;height:144px;border-radius:10px;overflow:hidden;position:relative;background:var(--bg);box-shadow:0 8px 24px rgba(0,0,0,.35);outline:3px solid transparent;transition:outline-color .2s,transform .2s}
+.ovi:hover .ovt{transform:translateY(-3px);outline-color:rgba(255,255,255,.6)}
+.ovi.cur .ovt{outline-color:var(--v)}
+.ovt .z{cursor:pointer}
+.ovt .slide{transform:scale(.2);transform-origin:0 0;width:1280px;height:720px;opacity:1;visibility:visible;transition:none;pointer-events:none}
+.ovl{display:block;font-size:13px;margin-top:8px;line-height:1.35}
+.ovl b{font-family:var(--display);color:#ff8a4f;margin-right:6px}
+/* mobile */
+@media (max-width:820px){
+  html,body{overflow:auto;height:auto;background:var(--bg)}
+  #viewport{position:static;display:block;padding-bottom:64px}
+  #stage{width:auto;height:auto;transform:none!important;border-radius:0;box-shadow:none;overflow:visible;background:none}
+  #stage > .slide{position:relative;inset:auto;opacity:1;visibility:visible;height:auto;padding:30px 18px 50px;border-bottom:8px solid #ebe7e2;transition:none}
+  .slide .foot{left:18px;right:18px;bottom:14px}
+  .foot .l2{display:none}
+  h2{font-size:24px}
+  .body{flex:none}
+  .zw:hover .z{transform:none}
+  .zw::after{opacity:1;width:24px;height:24px}
+  #stage > .s-cover{padding:30px 18px 44px}
+  .s-cover .cl,.hero,.author{position:relative;left:auto;right:auto;top:auto;bottom:auto;width:auto}
+  .s-cover .eyebrow{font-size:10px;letter-spacing:1px;white-space:normal;line-height:1.5;padding-right:70px;background:none;border:none;padding-left:0}
+  .s-cover h1{font-size:62px;letter-spacing:-2.5px;margin:14px 0 16px}
+  .badge b{font-size:23px}.badge span{font-size:13px}.badge{padding:10px 14px}
+  .lead{font-size:15.5px}
+  .hero{margin-top:22px}
+  .hero .zw{transform:none}
+  .author{display:inline-block;margin-top:18px;font-size:13px;border-radius:14px}
+  .s-cover .pop.blue,.s-cover .pop.orange{display:none}
+  .s-cover .pop.yellow{width:58px;height:58px;right:14px;top:16px}
+  .pain,.shift,.s4g,.s5g,.s6g,.s8g,.stack,.lessons,.steps3{grid-template-columns:1fr;height:auto;gap:12px}
+  .pain{grid-template-columns:1fr 1fr}
+  .pc:last-child{grid-column:1/-1}
+  .impact{grid-template-columns:1fr;gap:12px;padding:18px}
+  .impact .ar{transform:rotate(90deg);width:38px;height:38px}
+  .xmark{height:40px}
+  .col.ai ul{grid-template-columns:1fr}
+  .col .big{font-size:27px;padding-right:70px}
+  .col .pop{width:62px;height:62px}
+  .callout{align-items:flex-start;flex-direction:column;gap:6px}
+  .refs{height:auto;grid-template-rows:none}
+  .refs .zw{aspect-ratio:4/5}
+  .exp{height:auto}
+  .exp .zw{aspect-ratio:3/2;flex:none}
+  .row{flex-wrap:wrap;gap:8px}
+  .th.sq{width:calc(33.3% - 6px)} .th.sq .zw{width:100%;height:auto;aspect-ratio:1}
+  .row.a .th.real,.row.a .th.mini{width:calc(50% - 21px)}
+  .row.a .arrow{width:26px;height:auto;align-self:center}
+  .row.b .arrow{width:100%;height:20px;transform:rotate(90deg)}
+  .th.b1,.th.b2{width:100%} .th.b1 .zw,.th.b2 .zw{width:100%;height:auto;aspect-ratio:5/4}
+  .th.b2 .zw{aspect-ratio:16/9}
+  .dir{height:auto}
+  .illus{height:auto} .illus .zw{aspect-ratio:4/5}
+  .deckimg{max-width:none}
+  .ax .tg{width:100px}
+  .steps3 .arrow{height:24px;width:100%;transform:rotate(90deg)}
+  .st .zw{height:auto;aspect-ratio:16/9}
+  .tip{padding:16px 16px 16px 88px}.tip .pop{width:58px;height:58px;left:14px}
+  .gal1{grid-template-columns:1fr}
+  .gal2{grid-template-columns:1fr 1fr}
+  .lockbar{flex-wrap:wrap}
+  .lock{white-space:normal}
+  .flow{flex-direction:column}
+  .fa{width:100%;height:20px;transform:rotate(90deg)}
+  .ba{grid-template-columns:1fr 1fr}
+  .lessons-h{flex-direction:column;align-items:flex-start;gap:8px}
+  #stage > .s-close{padding:40px 18px 56px}
+  .s-close .big{font-size:36px;letter-spacing:-1px}
+  .s-close .q{font-size:17px}
+  .spk{width:100%;flex-direction:column;align-items:flex-start;padding:20px}
+  .s-close .pop{display:none}
+  #nav{height:60px;padding:0 12px}
+  #nav .ttl,.keys,.tb .t{display:none}
+  #ovg{grid-template-columns:1fr;gap:8px;width:100%}
+  .ovt{display:none}
+  .ovi{background:rgba(255,255,255,.08);border-radius:12px;padding:12px 14px}
+  .ovl{margin-top:0;font-size:15px}
+  #ov{padding:64px 16px 30px}
+}
+@media (max-width:420px){.pain,.ba{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div id="viewport"><main id="stage">
+<!-- 01 COVER -->
+<section class="slide s-cover" data-title="2 HOURS MIRACLE">
+  <div class="pop yellow"></div><div class="pop blue"></div><div class="pop orange"></div>
+  <div class="cl">
+    <span class="eyebrow">REAL PRODUCTION CASE STUDY · CONTENT, MARKETING &amp; CREATIVE</span>
+    <h1>2 HOURS <span class="g">MIRACLE</span></h1>
+    <div class="twin">
+      <div class="badge ai"><b>100% AI</b><span>in Production</span></div>
+      <div class="badge hu"><b>100% Human</b><span>in Idea</span></div>
+    </div>
+    <p class="lead">จากบรีฟจริงสู่ <b>Key Visual 4K</b> และ <b>Presentation 7 หน้า</b> ครบจบในราว 2 ชั่วโมง ด้วยวิธีทำงานที่คนคิด 100% และให้ AI ลงมือผลิตทุกขั้นตอน</p>
+  </div>
+  <div class="hero">
+    <div class="zw"><img class="z" src="assets/img/poster-final.webp" alt="Final Key Visual 4K — Coffee Loveเวอร์ ๆ 2027 · Terminal21 Asok" width="1920" height="1080"></div>
+    <div class="hc"><span class="pill">Final Key Visual · 4K</span><span class="pill">Coffee Loveเวอร์ ๆ 2027 — Terminal21 Asok</span></div>
+  </div>
+  <div class="author">โดย <b>ชวัฏ ตั้งบุญธินา (ก้อ)</b> · Case Study เพื่อ Workshop สาย Content, Marketing &amp; Creative</div>
+</section>
+
+<!-- 02 PAIN -->
+<section class="slide" data-title="The Pain Point">
+  <div class="hdr"><span class="kick"><b class="dk">THE PAIN</b> ถ้าคนทำงานต้องทำเองทั้งหมด</span>
+    <h2>ปัญหาจริงของคนทำงาน Content &amp; Marketing เมื่อเจอโจทย์แบบนี้</h2></div>
+  <div class="body">
+    <div class="pain">
+      <div class="pc card"><div class="no">01</div><h3>Research หา Ref</h3><p>ค้น Pinterest / มู้ดบอร์ดเทียบทิศทางเอง ใช้เวลาเป็นชั่วโมงกว่าจะเคาะมู้ด</p><div class="bt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Manual bottleneck</div></div>
+      <div class="pc card"><div class="no">02</div><h3>วางแผนออกแบบแต่ละ Element</h3><p>ปั้นทีละชิ้น แก้ทีละจุด วนส่งบรีฟหลายรอบกว่าจะเข้ากัน</p><div class="bt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Manual bottleneck</div></div>
+      <div class="pc card"><div class="no">03</div><h3>วางคอนเซปต์</h3><p>ตีความชื่องาน แตกแกนเล่าเรื่อง และทำภาพประกอบให้คุมโทนเดียวกัน</p><div class="bt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Manual bottleneck</div></div>
+      <div class="pc card"><div class="no">04</div><h3>ทำ Logo ชื่องาน</h3><p>ออกแบบ Lettering / Typography ให้เข้าธีมโดยตัวอักษรไทย–อังกฤษไม่เพี้ยน</p><div class="bt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Manual bottleneck</div></div>
+      <div class="pc card"><div class="no">05</div><h3>ทำ Presentation เล่าเรื่องนำเสนอ</h3><p>หารูปสินค้าจริง หาโลโก้ จัดเลย์เอาต์สไลด์คุมธีมทุกหน้า</p><div class="bt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Manual bottleneck</div></div>
+    </div>
+    <div class="impact">
+      <div><div class="k">แบบเดิม</div><p>มักต้องใช้ <b class="hl">หลายตำแหน่ง</b> (Creative · Art Director · Graphic · Copywriter) และใช้เวลา <b class="hl">หลายวันถึงเป็นอาทิตย์</b></p></div>
+      <div class="ar"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div><div class="k">โจทย์ของเคสนี้</div><p>ทำยังไงให้ <b class="ho">1 คนคุมไอเดีย + AI</b> จบงานคุณภาพจริงได้ใน <b class="ho">~2 ชั่วโมง</b></p></div>
+    </div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+
+<!-- 03 SHIFT -->
+<section class="slide" data-title="The Shift: Human Idea × AI Production">
+  <div class="hdr"><span class="kick"><b>THE SHIFT</b> Human Idea × AI Production</span>
+    <h2>ไม่ใช่ “กดพรอมต์เดียวแล้วลุ้น” — แต่คือการแบ่งหน้าที่ชัดระหว่างคนกับ AI</h2></div>
+  <div class="body">
+    <div class="shift">
+      <div class="col hu"><div class="pop blue"></div>
+        <div class="big">100% Human in Idea</div><div class="sm">สิ่งที่คนถือไว้ทุกขั้นตอน</div>
+        <ul>
+          <li>ตั้งโจทย์และกรอบงาน</li>
+          <li>วางกฎเหล็ก “ออกแบบทีละชิ้นก่อนประกอบ”</li>
+          <li>คิดคำคอนเซปต์ (“Loveเวอร์ ๆ” / “Sip. Taste. Enjoy.”)</li>
+          <li>คัด–ติ–สั่งแก้ตามเทสต์จริง (เช่น ขนาดตึก สัดส่วนแก้ว มู้ดภาพ)</li>
+        </ul>
+      </div>
+      <div class="xmark"><span>×</span></div>
+      <div class="col ai"><div class="pop orange"></div>
+        <div class="big">100% AI in Production</div><div class="sm">สิ่งที่ AI ลงมือผลิตให้</div>
+        <ul>
+          <li>ค้นเรฟหลายแนวมาให้เลือก</li>
+          <li>เจนชิ้นงานทีละ element ให้คุมสไตล์เดียวกัน</li>
+          <li>ขยายสัดส่วน 16:9</li>
+          <li>รีไรต์ข้อความเป็นภาษาอังกฤษ</li>
+          <li>รวบรวมรูปและโลโก้ร้านจริง</li>
+          <li>จัดหน้าและประกอบสไลด์ 4K เป็นไฟล์ PowerPoint</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout"><span class="pill">REPEATABLE</span>เวิร์กโฟลว์นี้ทำซ้ำได้จริงกับงานแคมเปญ อีเวนต์ และคอนเทนต์ทุกประเภท</div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+
+<!-- 04 RESEARCH -->
+<section class="slide" data-title="Step 1 — Research &amp; หา Ref">
+  <div class="hdr"><span class="kick"><b class="or">STEP 01</b> Research &amp; หา Ref</span>
+    <h2><span class="n">01 /</span> Research &amp; หา Ref <span class="soft">— ให้ AI กางตัวเลือก คนเป็นคนเคาะทิศทาง</span></h2></div>
+  <div class="body">
+    <div class="s4g">
+      <div><div class="lbl"><i></i>Pinterest research refs</div>
+        <div class="refs">
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/research-01.webp" alt="Pinterest research ref 01"></div>
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/research-02.webp" alt="Pinterest research ref 02"></div>
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/research-03.webp" alt="Pinterest research ref 03"></div>
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/research-04.webp" alt="Pinterest research ref 04"></div>
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/research-05.webp" alt="Pinterest research ref 05"></div>
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/research-06.webp" alt="Pinterest research ref 06"></div>
+        </div></div>
+      <div><div class="lbl"><i class="b"></i>Early directions · AI</div>
+        <div class="exp">
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/explore-mascots.webp" alt="Direction A — มาสคอตเรโทร (early exploration)"><span class="tag">A · มาสคอตเรโทร</span></div>
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/explore-town.webp" alt="Direction B — เมืองจิ๋ว (early exploration)"><span class="tag">B · เมืองจิ๋ว</span></div>
+        </div></div>
+      <div class="story">
+        <div class="lbl"><i class="y"></i>How it went</div>
+        <p>เริ่มจากโจทย์งาน<b>อีเวนต์กาแฟ–มัทฉะ–ช็อกโกแลต</b> ให้ AI ช่วยสำรวจเรฟหลายสไตล์มาวางเทียบกันทันที</p>
+        <div class="styles"><span class="pill">มาสคอตเรโทร</span><span class="pill">เมืองไอโซเมตริก</span><span class="pill">ฉากสแปลช</span></div>
+        <div class="decide">
+          <div class="k">HUMAN DECISION</div>
+          <div class="q">“เมืองจิ๋วที่กาแฟเป็นพระเอก พร้อมเพื่อนมัทฉะและช็อกโกแลต”</div>
+          <div class="s">คนตัดตัวเลือกที่ไม่ใช่และเคาะทิศทาง โดยไม่ต้องเสียเวลาครึ่งวัน</div>
+        </div>
+        <div class="who"><span class="pill ai">AI · กางตัวเลือก</span><span class="pill hu">Human · เคาะทิศทาง</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+<!-- 05 ELEMENTS -->
+<section class="slide" data-title="Step 2 — วางแผนออกแบบทีละ Element">
+  <div class="hdr"><span class="kick"><b class="or">STEP 02</b> Element-First</span>
+    <h2><span class="n">02 /</span> วางแผนออกแบบทีละ Element <span class="soft">— กฎเหล็ก: ปั้นทีละชิ้น อนุมัติก่อน แล้วค่อยประกอบ</span></h2></div>
+  <div class="body">
+    <div class="s5g">
+      <div>
+        <div class="lbl"><i></i>A · Drink &amp; building elements — ทีละชิ้น</div>
+        <div class="row a">
+          <div class="th sq"><div class="zw"><img class="z" loading="lazy" src="assets/img/el-coffee.webp" alt="Element: แก้วกาแฟ"></div><div class="cap">Coffee</div></div>
+          <div class="th sq"><div class="zw"><img class="z" loading="lazy" src="assets/img/el-matcha.webp" alt="Element: แก้วมัทฉะ"></div><div class="cap">Matcha</div></div>
+          <div class="th sq"><div class="zw"><img class="z" loading="lazy" src="assets/img/el-choc.webp" alt="Element: แก้วช็อกโกแลต (เครื่องดื่ม)"></div><div class="cap">Chocolate drink</div></div>
+          <div class="th sq real"><div class="zw"><img class="z" loading="lazy" src="assets/img/t21-photo.webp" alt="ภาพจริงตึก Terminal21 Asok (reference)"></div><div class="cap">ภาพจริง T21</div></div>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          <div class="th sq mini"><div class="zw"><img class="z" loading="lazy" src="assets/img/t21-mini.webp" alt="Element: ตึก Terminal21 สไตล์เมืองจิ๋ว"></div><div class="cap">T21 เมืองจิ๋ว</div></div>
+        </div>
+        <div class="lbl"><i class="b"></i>B · Composite &amp; refinement — ประกอบ แล้วขยาย</div>
+        <div class="row b">
+          <div class="th b1"><div class="zw"><img class="z" loading="lazy" src="assets/img/city-base.webp" alt="Base: ฉากเมืองจิ๋ว"></div><div class="cap">Base เมืองจิ๋ว</div></div>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          <div class="th b1"><div class="zw"><img class="z" loading="lazy" src="assets/img/city-with-t21.webp" alt="ประกอบตึก Terminal21 เข้ากับฉาก"></div><div class="cap">+ ตึก Terminal21</div></div>
+          <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          <div class="th b2"><div class="zw"><img class="z" loading="lazy" src="assets/img/city-16x9.webp" alt="ขยายเป็นแคนวาส 16:9"></div><div class="cap">ขยายเป็น 16:9</div></div>
+        </div>
+      </div>
+      <div class="dir">
+        <div class="k">HUMAN DIRECTION</div>
+        <h4>คนสั่ง — AI ปั้นตาม</h4>
+        <ol>
+          <li><span>สั่งแยกแก้วช็อกโกแลตให้เป็น <b>“เครื่องดื่ม”</b> ไม่ใช่แท่งช็อกโกแลต</span></li>
+          <li><span>เอาภาพจริงตึก <b>Terminal21 Asok</b> มาแปลงเป็นสไตล์เมืองจิ๋ว แล้ว<b>ลดขนาดลง 10%</b> เพื่อไม่ให้แย่งซีนแก้วกาแฟหลัก</span></li>
+          <li><span>ขยายภาพจากทรงเดิมเป็น <b>16:9</b> เพื่อพร้อมขึ้นหน้าปก Presentation</span></li>
+        </ol>
+        <div class="rule"><b>Rule:</b> ทุกชิ้นต้องผ่านการอนุมัติก่อนเอาไปประกอบ — คุมงานได้ ไม่ต้องสุ่มใหม่ทั้งภาพ</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+
+<!-- 06 CONCEPT -->
+<section class="slide" data-title="Step 3 — วางคอนเซปต์เล่าเรื่อง">
+  <div class="hdr"><span class="kick"><b class="or">STEP 03</b> Concept &amp; Storytelling</span>
+    <h2><span class="n">03 /</span> วางคอนเซปต์ <span class="soft">— จากไอเดียคน 100% สู่ภาพเล่าเรื่องคุมโทนเดียวกัน</span></h2></div>
+  <div class="body">
+    <div class="s6g">
+      <div>
+        <div class="lbl"><i class="b"></i>Human concept</div>
+        <div class="nm"><div class="t">Coffee Love<em>เวอร์ ๆ</em> 2027</div>
+          <p>เล่นคำจาก <b>Lover × เวอร์ ๆ</b> ไม่ได้จำกัดแค่คอกาแฟ แต่ต้อนรับคอมัทฉะและคอช็อกโกแลตด้วย</p></div>
+        <div class="axes">
+          <div class="ax"><div class="tg">SIP <small>เวอร์ ๆ</small></div><p>มากกว่าแค่กาแฟ ครบทุกสายเครื่องดื่ม</p></div>
+          <div class="ax"><div class="tg">TASTE <small>เวอร์ ๆ</small></div><p>ลิ้มลองรสชาติใหม่จากร้านตัวท็อปของแต่ละสาย</p></div>
+          <div class="ax"><div class="tg">ENJOY <small>เวอร์ ๆ</small></div><p>ประสบการณ์ไลฟ์สไตล์ที่รวมคนรักเครื่องดื่มไว้ที่เดียว</p></div>
+        </div>
+      </div>
+      <div>
+        <div class="lbl"><i></i>AI visual + English copy execution</div>
+        <div class="illus">
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/concept-sip.webp" alt="Concept illustration — SIP"><span class="tag">SIP</span></div>
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/concept-taste.webp" alt="Concept illustration — TASTE"><span class="tag">TASTE</span></div>
+          <div class="zw"><img class="z" loading="lazy" src="assets/img/concept-enjoy.webp" alt="Concept illustration — ENJOY"><span class="tag">ENJOY</span></div>
+        </div>
+        <div class="zw deckimg"><img class="z" loading="lazy" src="assets/img/deck-02.webp" alt="Presentation หน้า 2 — Concept (English rewrite)"></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+
+<!-- 07 LOGO -->
+<section class="slide" data-title="Step 4 — ทำ Logo ชื่องาน &amp; Key Visual 4K">
+  <div class="hdr"><span class="kick"><b class="or">STEP 04</b> Title Logo &amp; Final Key Visual</span>
+    <h2><span class="n">04 /</span> ทำ Logo ชื่องาน <span class="soft">— รู้ว่าตรงไหนให้ AI เจน ตรงไหนต้องวางด้วยงานกราฟิกจริง</span></h2></div>
+  <div class="body">
+    <div class="steps3">
+      <div class="st"><div class="zw"><img class="z" loading="lazy" src="assets/img/title-3d.webp" alt="Lettering 3D ชื่องาน Coffee Loveเวอร์ ๆ 2027 (AI)"></div>
+        <div class="sn"><b>1</b><span>AI เจน Lettering 3D</span></div>
+        <p>เจน Lettering 3D ชื่องาน <code>Coffee Loveเวอร์ ๆ 2027</code> ให้เข้ากับไฟและบรรยากาศเมืองจิ๋ว</p></div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="st"><div class="zw chk"><img class="z" loading="lazy" src="assets/img/title-cutout.webp" alt="Title cutout — คีย์พื้นหลังออก"></div>
+        <div class="sn"><b>2</b><span>ไดคัต &amp; จัดวาง</span></div>
+        <p>ไดคัต/คีย์พื้นหลังออกอย่างเนียน แล้วจัดตำแหน่งเหนือฉากเมืองไม่ให้บังตัวงาน</p></div>
+      <div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="st"><div class="zw"><img class="z" loading="lazy" src="assets/img/poster-final.webp" alt="Final Key Visual 4K — Coffee Loveเวอร์ ๆ 2027"></div>
+        <div class="sn"><b>3</b><span>จบ Key Visual 4K</span></div>
+        <p>วางโลโก้ทางการ Terminal21 Asok มุมขวาบน + วันที่ <code>12–21 MARCH 2027</code> และ <code>M &amp; G FLOOR</code> ด้วยฟอนต์จริงจนจบ 4K</p></div>
+    </div>
+    <div class="tip"><div class="pop yellow"></div>
+      <div class="k">WORKSHOP PRO-TIP · RULE OF THUMB</div>
+      <p>ให้ AI ทำส่วนที่มี<b>มิติและงานศิลป์</b> (3D Title Lettering) ส่วน <span class="hl"><b>โลโก้แบรนด์ + วันเวลา</b></span> ใช้ไฟล์ทางการกับฟอนต์จริง 100% เพื่อความคมกริบและไม่เพี้ยน</p></div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+<!-- 08 PRESENTATION -->
+<section class="slide" data-title="Step 5 — ทำ Presentation นำเสนอ">
+  <div class="hdr"><span class="kick"><b class="or">STEP 05</b> Presentation Deck</span>
+    <h2><span class="n">05 /</span> ทำ Presentation นำเสนอ <span class="soft">— คุมธีมเดียวกับโปสเตอร์ครบทั้ง 7 หน้า</span></h2></div>
+  <div class="body">
+    <div class="s8g">
+      <div>
+        <div class="gal1">
+          <div class="gc"><div class="zw"><img class="z" loading="lazy" src="assets/img/poster-final.webp" alt="Deck หน้า 1 — Cover"></div><div class="cap"><b>01</b>Cover</div></div>
+          <div class="gc"><div class="zw"><img class="z" loading="lazy" src="assets/img/deck-02.webp" alt="Deck หน้า 2 — Concept"></div><div class="cap"><b>02</b>Concept</div></div>
+          <div class="gc"><div class="zw"><img class="z" loading="lazy" src="assets/img/deck-03.webp" alt="Deck หน้า 3 — Product Highlights"></div><div class="cap"><b>03</b>Product Highlights</div></div>
+        </div>
+        <div class="lockbar"><span class="lock"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>เบลอรายชื่อร้านไว้เพื่อรักษาความลับลูกค้า</span><span class="cap">Layout การ์ดเดียวกันทุกหมวด: Coffee / Matcha / Chocolate / G-Floor</span></div>
+        <div class="gal2">
+          <div class="gc"><div class="zw"><img class="z" loading="lazy" src="assets/img/deck-04-blur.webp" alt="Deck หน้า 4 — Coffee (เบลอรายชื่อร้านไว้เพื่อรักษาความลับลูกค้า)"><span class="tag">BLURRED</span></div><div class="cap"><b>04</b>Coffee</div></div>
+          <div class="gc"><div class="zw"><img class="z" loading="lazy" src="assets/img/deck-05-blur.webp" alt="Deck หน้า 5 — Matcha (เบลอรายชื่อร้านไว้เพื่อรักษาความลับลูกค้า)"><span class="tag">BLURRED</span></div><div class="cap"><b>05</b>Matcha</div></div>
+          <div class="gc"><div class="zw"><img class="z" loading="lazy" src="assets/img/deck-06-blur.webp" alt="Deck หน้า 6 — Chocolate (เบลอรายชื่อร้านไว้เพื่อรักษาความลับลูกค้า)"><span class="tag">BLURRED</span></div><div class="cap"><b>06</b>Chocolate</div></div>
+          <div class="gc"><div class="zw"><img class="z" loading="lazy" src="assets/img/deck-07-blur.webp" alt="Deck หน้า 7 — G Floor (เบลอรายชื่อร้านไว้เพื่อรักษาความลับลูกค้า)"><span class="tag">BLURRED</span></div><div class="cap"><b>07</b>G Floor</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="lbl"><i class="y"></i>Production highlights</div>
+        <div class="hil">
+          <div class="hi"><i>01</i><p><b>พื้นหลังเดียวกับโปสเตอร์</b><br>ดึงฉากเมืองจิ๋วมาเบลอเป็นพื้นหลัง</p></div>
+          <div class="hi"><i>02</i><p><b>โอเวอร์เลย์สีครีมอบอุ่น</b><br>คุมโทนให้อ่านง่ายทุกหน้า</p></div>
+          <div class="hi"><i>03</i><p><b>การ์ดโค้งมน</b><br>เลย์เอาต์เดียวกันทุกหมวดร้าน</p></div>
+          <div class="hi"><i>04</i><p><b>ฟอนต์ Kanit ไทย–อังกฤษ</b><br>คุมธีมเดียวกันทั้ง 7 หน้า</p></div>
+        </div>
+        <div class="pptx"><div class="ic">PPTX</div><p><b>ไฟล์ PowerPoint .pptx</b><br>ประกอบเป็นไฟล์พร้อมส่งพรีเซนต์จริง</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+
+<!-- 09 STACK -->
+<section class="slide" data-title="The AI Stack">
+  <div class="hdr"><span class="kick"><b>THE AI STACK</b> Behind the scenes</span>
+    <h2>AI Stack เบื้องหลังงานนี้ <span class="soft">— ใช้เครื่องมือแต่ละตัวทำอะไรบ้าง?</span></h2></div>
+  <div class="body">
+    <div class="stack">
+      <div class="tool card"><div class="top"><div class="ix">1</div><h3>Grok Bot<small>AI Teammate</small></h3></div>
+        <div class="role">AI Teammate &amp; ผู้ช่วยคุมโปรเจกต์</div>
+        <ul>
+          <li>อ่านบรีฟและแตกงานเป็นขั้นตอนตามลำดับ</li>
+          <li>หาเรฟจาก Pinterest, ค้นหารูปสินค้าจริง และรวบรวมโลโก้ร้านค้า</li>
+          <li>รีไรต์ข้อความคอนเซปต์ไทย → อังกฤษ ให้พร้อมพรีเซนต์</li>
+          <li>คุมรอบแก้ทีละจุด และจัดระเบียบไฟล์ทั้งหมดลงเครื่องให้พร้อมส่ง</li>
+        </ul></div>
+      <div class="tool card t2"><div class="top"><div class="ix">2</div><h3>popcont<small>PopStudio · GPT Image 2</small></h3></div>
+        <div class="role">AI ผลิตชิ้นงานภาพ</div>
+        <ul>
+          <li>เจนชิ้นงานภาพแยกทีละ element (เครื่องดื่มแต่ละแก้ว, ตึก Terminal21 แบบเมืองจิ๋ว)</li>
+          <li>เจน Lettering 3D ชื่องาน <code>Coffee Loveเวอร์ ๆ 2027</code></li>
+          <li>เจนภาพประกอบคอนเซปต์ 3 ชิ้น (<code>Sip</code>, <code>Taste</code>, <code>Enjoy</code>) ให้โทนแสงและสไตล์ตรงกัน</li>
+        </ul></div>
+      <div class="tool card t3"><div class="top"><div class="ix">3</div><h3>Python<small>Pillow + python-pptx</small></h3></div>
+        <div class="role">Presentation &amp; Finishing</div>
+        <ul>
+          <li>ไดคัต/คีย์พื้นหลังชื่องาน ปรับขนาดและตำแหน่งองค์ประกอบเป๊ะระดับพิกเซล</li>
+          <li>วางโลโก้แบรนด์ทางการ วันที่ และข้อความด้วยฟอนต์จริง (<code>Kanit</code>) ไม่มีตัวอักษรเพี้ยน</li>
+          <li>จัดเลย์เอาต์สไลด์ความละเอียด 4K ทั้ง 7 หน้า และประกอบเป็นไฟล์ <code>.pptx</code> อัตโนมัติ</li>
+        </ul></div>
+    </div>
+    <div class="flow">
+      <div class="fn h"><b>Human Idea &amp; Direction</b><span>โจทย์ · คอนเซปต์ · คัดเลือก</span></div><div class="fa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></div>
+      <div class="fn g"><b>Grok Bot</b><span>Research &amp; Orchestration</span></div><div class="fa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></div>
+      <div class="fn p"><b>PopStudio</b><span>Visual Elements</span></div><div class="fa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></div>
+      <div class="fn y"><b>Pillow + python-pptx</b><span>Precision Layout &amp; Deck</span></div><div class="fa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></div>
+      <div class="fn f"><b>Final Delivery</b><span>Key Visual 4K + .pptx</span></div>
+    </div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+
+<!-- 10 SUMMARY -->
+<section class="slide" data-title="Summary &amp; Workshop Blueprint">
+  <div class="hdr"><span class="kick"><b class="or">THE MIRACLE</b> Summary &amp; Workshop Blueprint</span>
+    <h2>สรุปผลลัพธ์ ~2 ชั่วโมง <span class="soft">— และสิ่งที่เอาไปสอนให้คนอื่นทำตามได้จริง</span></h2></div>
+  <div class="body">
+    <div class="ba">
+      <div class="bc card hot"><div class="k">เวลาผลิต</div><div class="bf">ปกติ 3–7 วัน</div><div class="af"><em>~2</em> ชั่วโมง</div><div class="nt">จากภาพฐานสู่ Key Visual 4K + Deck 7 หน้า</div></div>
+      <div class="bc card"><div class="k">กำลังคน</div><div class="bf">หลายบทบาท (Creative / Art / Graphic / Copy)</div><div class="af"><em>1 คน</em>ถือไอเดีย + AI Stack</div></div>
+      <div class="bc card"><div class="k">ความเร็วรอบแก้</div><div class="bf">รอแก้เป็นวัน</div><div class="af">ปรับทีละ element <em>เห็นผลในไม่กี่นาที</em></div></div>
+      <div class="bc card"><div class="k">งานที่ได้จริง</div><div class="bf nl">DELIVERABLES</div><div class="af sm">โปสเตอร์ 4K + ภาพประกอบคอนเซปต์ 3 ชิ้น + PowerPoint 7 หน้า + ชุดไฟล์พร้อมส่ง</div></div>
+    </div>
+    <div class="lessons-h"><span class="kick"><b>WORKSHOP</b></span><h3>3 บทเรียนที่เอาไปสอนลงมือทำใน Workshop MarTech Expo ได้ทันที</h3></div>
+    <div class="lessons">
+      <div class="ls card"><div class="n">1</div><div><h4>Element-First Method</h4><p>แยกเจนทีละชิ้นก่อนประกอบ คุมงานได้จริง ไม่ใช่สุ่มดวง</p></div></div>
+      <div class="ls card"><div class="n">2</div><div><h4>Hybrid Precision</h4><p>แยกงานศิลป์ให้ AI เจน + แยกโลโก้และตัวอักษรให้วางด้วยไฟล์จริง</p></div></div>
+      <div class="ls card"><div class="n">3</div><div><h4>Human-in-the-Loop Pipeline</h4><p>วิธีแบ่งบทบาทให้ AI Teammate ทำงานร่วมกับเครื่องมือภาพและสไลด์ครบจบในรอบเดียว</p></div></div>
+    </div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+
+<!-- 11 CLOSING -->
+<section class="slide s-close" data-title="Closing &amp; Speaker">
+  <div class="pop fah"></div><div class="pop blue"></div><div class="pop orange"></div><div class="pop yellow"></div>
+  <span class="eyebrow">HUMAN FIRST BEFORE AI FIRST</span>
+  <div class="big"><span class="b">100% Human in Idea</span><span class="d">·</span><span class="o">100% AI in Production</span></div>
+  <p class="q"><b>Human First before AI First</b> — AI ไม่ได้มาแทนคนคิด แต่ทำให้ไอเดียคนกลายเป็นงานจริงเร็วขึ้นหลายเท่า</p>
+  <div class="spk card">
+    <div class="av">ก้อ</div>
+    <div>
+      <h3>ชวัฏ ตั้งบุญธินา (ก้อ)</h3>
+      <div class="rl">Forward Deployed AI Strategist | Co-Founder &amp; CGO, SIXSHEET Tech</div>
+      <p>ประสบการณ์สาย Creative &amp; Content กว่า 21 ปี · เทรนและถ่ายทอดการใช้ AI ทำงานจริงให้ผู้เรียนกว่า 10,000+ คน จาก 300+ องค์กร</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/schwat-tangboontina-ba4285128/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#0a66c2"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.3 0-2.9-1.8-2.9s-2.1 1.4-2.1 2.8V21h-4z"/></svg>LinkedIn</a>
+        <a href="https://www.facebook.com/schwatkhocinnamon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#1877f2"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Facebook</a>
+        <a href="https://www.instagram.com/kho.popcont/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="#d62976" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="#d62976"/></svg>IG @kho.popcont</a>
+        <a href="https://www.tiktok.com/@kho.popcont" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#111"><path d="M16.6 3c.4 2.2 1.8 3.6 4 3.8v3.1c-1.5 0-2.8-.4-4-1.2v6.1c0 3.5-2.6 5.9-5.8 5.9A5.7 5.7 0 0 1 5 15c0-3.4 2.9-6 6.4-5.6v3.2c-1.6-.4-3.2.8-3.2 2.4 0 1.4 1.1 2.5 2.5 2.5 1.6 0 2.6-1 2.6-3V3z"/></svg>TikTok @kho.popcont</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><div class="fl"><i class="dot"></i>2 HOURS MIRACLE<span class="l2">&nbsp;· Case Study by ชวัฏ ตั้งบุญธินา (ก้อ)</span></div><div class="pg"></div></div>
+</section>
+</main></div>
+<nav id="nav" aria-label="Slide navigation">
+  <div class="ttl"><i class="dot"></i><b>2 Hours Miracle</b>· Case Study</div>
+  <div class="ctl">
+    <button class="nb" id="prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <div id="ctr">01 <span>/ 11</span></div>
+    <button class="nb" id="next" aria-label="Next slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+  <div class="rt">
+    <span class="keys"><kbd>←</kbd> <kbd>→</kbd> <kbd>Space</kbd></span>
+    <button class="tb" id="ovbtn" aria-label="Slide overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg><span class="t">Overview</span></button>
+  </div>
+</nav>
+<div class="modal" id="lb" role="dialog" aria-label="Image zoom"><button class="mx" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><img id="lbimg" alt=""><div id="lbcap"></div></div>
+<div class="modal" id="ov" role="dialog" aria-label="Slide overview"><button class="mx" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button><h3>Slide Overview</h3><div id="ovg"></div></div>
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('#stage > .slide')),N=slides.length,cur=0;
+  var stage=document.getElementById('stage'),ctr=document.getElementById('ctr'),prog=document.getElementById('progress');
+  var prev=document.getElementById('prev'),next=document.getElementById('next');
+  var lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg'),lbcap=document.getElementById('lbcap'),ov=document.getElementById('ov'),ovg=document.getElementById('ovg');
+  var pad=function(n){return (n<10?'0':'')+n};
+  var mq=window.matchMedia('(max-width: 820px)');
+  slides.forEach(function(s,i){var p=s.querySelector('.pg');if(p)p.textContent=pad(i+1)+' / '+pad(N)});
+  function fit(){
+    if(mq.matches){stage.style.transform='';return}
+    var s=Math.min((window.innerWidth-40)/1280,(window.innerHeight-64-32)/720);
+    stage.style.transform='scale('+s+')';
+  }
+  function ui(){
+    ctr.innerHTML=pad(cur+1)+' <span>/ '+pad(N)+'</span>';
+    prog.style.width=((cur+1)/N*100)+'%';
+    prev.disabled=cur===0;next.disabled=cur===N-1;
+    [].forEach.call(ovg.children,function(b,i){b.classList.toggle('cur',i===cur)});
+  }
+  function go(i,instant){
+    i=Math.max(0,Math.min(N-1,i));
+    if(mq.matches){cur=i;slides[i].scrollIntoView({behavior:instant?'auto':'smooth',block:'start'});ui();return}
+    slides[cur].classList.remove('active');cur=i;slides[cur].classList.add('active');
+    if(history.replaceState)history.replaceState(null,'','#'+(cur+1));ui();
+  }
+  window.__deck={go:go,cur:function(){return cur},N:N};
+  prev.onclick=function(){go(cur-1)};next.onclick=function(){go(cur+1)};
+  function closeAll(){lb.classList.remove('open');ov.classList.remove('open')}
+  function openOv(){ui();ov.classList.add('open')}
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){closeAll();return}
+    if(lb.classList.contains('open'))return;
+    if(e.key==='o'||e.key==='g'){ov.classList.contains('open')?closeAll():openOv();return}
+    if(ov.classList.contains('open'))return;
+    if(e.key==='ArrowRight'||e.key==='PageDown'||(e.key===' '&&!e.shiftKey)){e.preventDefault();go(cur+1)}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'||(e.key===' '&&e.shiftKey)){e.preventDefault();go(cur-1)}
+    else if(e.key==='Home'){go(0)}else if(e.key==='End'){go(N-1)}
+  });
+  var vp=document.getElementById('viewport'),sx=null,sy=null;
+  vp.addEventListener('touchstart',function(e){if(mq.matches)return;sx=e.touches[0].clientX;sy=e.touches[0].clientY},{passive:true});
+  vp.addEventListener('touchend',function(e){if(mq.matches||sx===null)return;var dx=e.changedTouches[0].clientX-sx,dy=e.changedTouches[0].clientY-sy;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))go(cur+(dx<0?1:-1));sx=null},{passive:true});
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    if(t.classList&&t.classList.contains('z')&&t.closest('#stage')){lbimg.src=t.currentSrc||t.src;lbimg.alt=t.alt;lbcap.textContent=t.alt||'';lb.classList.add('open');return}
+    if(t.closest('[data-close]')||t===lb||t===ov||t===lbcap)closeAll();
+  });
+  slides.forEach(function(s,i){
+    var b=document.createElement('button');b.className='ovi';b.type='button';
+    var t=document.createElement('div');t.className='ovt';var c=s.cloneNode(true);c.classList.add('active');
+    c.querySelectorAll('img').forEach(function(im){im.removeAttribute('loading')});t.appendChild(c);
+    var l=document.createElement('span');l.className='ovl';l.innerHTML='<b>'+pad(i+1)+'</b>'+s.getAttribute('data-title');
+    b.appendChild(t);b.appendChild(l);b.onclick=function(){closeAll();go(i,true)};ovg.appendChild(b);
+  });
+  document.getElementById('ovbtn').onclick=openOv;
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){if(!mq.matches)return;es.forEach(function(en){if(en.isIntersecting){cur=slides.indexOf(en.target);ui()}})},{rootMargin:'-45% 0px -50% 0px'});
+    slides.forEach(function(s){io.observe(s)});
+  }
+  function onMode(){fit();if(!mq.matches)slides.forEach(function(s,i){s.classList.toggle('active',i===cur)})}
+  if(mq.addEventListener)mq.addEventListener('change',onMode);else mq.addListener(onMode);
+  window.addEventListener('resize',fit);
+  var h=parseInt((location.hash||'').slice(1),10);cur=(h>=1&&h<=N)?h-1:0;
+  slides[cur].classList.add('active');fit();ui();
+  if(mq.matches&&cur>0)setTimeout(function(){go(cur,true)},60);
+})();
+</script>
+</body>
+</html>
